@@ -152,19 +152,19 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-jingjing" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-python基础知识（一）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/14/jingjing/">jingjing</a>
+      <a class="article-title" href="/2017/10/14/python基础知识（一）/">python基础知识（一）</a>
     </h1>
   
 
         
-        <a href="/2017/10/14/jingjing/" class="archive-article-date">
+        <a href="/2017/10/14/python基础知识（一）/" class="archive-article-date">
   	<time datetime="2017-10-14T10:18:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-14</time>
 </a>
         
@@ -172,8 +172,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="3-python3-文件处理与异常"><a href="#3-python3-文件处理与异常" class="headerlink" title="3 python3  文件处理与异常"></a>3 python3  文件处理与异常</h1><h2 id="3-1-处理程序的外部数据"><a href="#3-1-处理程序的外部数据" class="headerlink" title="3.1 处理程序的外部数据"></a>3.1 处理程序的外部数据</h2><p>大多数程序都遵循 输入-处理-输出 的模型，首先输入数据，然后处理，最后存储，打印或者显示 传输等。<br>目前为止我们知道如何处理数据，如何在屏幕上打印数据，那么如何向程序传入数据呢？具体就是如何从文件读取数据呢？</p>
-
+        <h2 id="1-安装python"><a href="#1-安装python" class="headerlink" title="1 安装python"></a>1 安装python</h2><h2 id="2-交互式解释器"><a href="#2-交互式解释器" class="headerlink" title="2 交互式解释器"></a>2 交互式解释器</h2><p>所谓交互式解释器，当我们启动python的时候会出现如下界面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Python 3.6.3 (v3.6.3:2c5fed86e0, Oct  3 2017, 00:32:08) </div><div class="line">[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin</div><div class="line">Type &quot;copyright&quot;, &quot;credits&quot; or &quot;license()&quot; for more information.</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>这就是python的交互式解释器，&gt;&gt;&gt; 三个大于号就是python的命令提示符,试着输入print(“hello world”)，<br>然后按下回车键，python解释器会打印出 hello world 并在下一行又出现命令提示符。说明python已经解释并<br>执行了你刚刚输入的命令。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; </div><div class="line">print(&quot;hello world&quot;)</div><div class="line">hello world</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>如果写点乱七八糟的呢？</p>
+<pre><code>&gt;&gt;&gt; print(&quot;hello world&quot;)
+hello world
+&gt;&gt;&gt; sagdjaks;lg
+Traceback (most recent call last):
+  File &quot;&lt;pyshell#3&gt;&quot;, line 1, in &lt;module&gt;
+    sagdjaks;lg
+NameError: name &apos;sagdjaks&apos; is not defined
+&gt;&gt;&gt;
+</code></pre><p> 显然python没有明白你的意思报出了一个错误。这就是python的交互式解释器。   </p>
+<h2 id="3-算法"><a href="#3-算法" class="headerlink" title="3 算法"></a>3 算法</h2><h2 id="4-数字和表达式"><a href="#4-数字和表达式" class="headerlink" title="4 数字和表达式"></a>4 数字和表达式</h2><h2 id="5-变量"><a href="#5-变量" class="headerlink" title="5 变量"></a>5 变量</h2><h2 id="6-语句"><a href="#6-语句" class="headerlink" title="6 语句"></a>6 语句</h2><h2 id="7-获取用户输入"><a href="#7-获取用户输入" class="headerlink" title="7 获取用户输入"></a>7 获取用户输入</h2><h2 id="8-函数"><a href="#8-函数" class="headerlink" title="8 函数"></a>8 函数</h2><h2 id="9-模块"><a href="#9-模块" class="headerlink" title="9 模块"></a>9 模块</h2><h2 id="10-保存并执行程序"><a href="#10-保存并执行程序" class="headerlink" title="10 保存并执行程序"></a>10 保存并执行程序</h2><h2 id="11-字符串"><a href="#11-字符串" class="headerlink" title="11 字符串"></a>11 字符串</h2><h2 id="12-总结"><a href="#12-总结" class="headerlink" title="12 总结"></a>12 总结</h2><h3 id="新函数"><a href="#新函数" class="headerlink" title="新函数"></a>新函数</h3>
       
 
       
@@ -181,11 +192,22 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">基础知识,</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/10/14/jingjing/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/10/14/python基础知识（一）/">展开全文 >></a>
         </p>
       
 
@@ -377,6 +399,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">基础知识,</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>

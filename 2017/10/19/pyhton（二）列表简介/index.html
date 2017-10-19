@@ -6,20 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>python基础知识（一） | 张哲的网络日志</title>
+  <title>pyhton（二）列表简介 | 张哲的网络日志</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="安装python交互式解释器所谓交互式解释器，当我们启动python的时候会出现如下界面 1234Python 3.6.3 (v3.6.3:2c5fed86e0, Oct  3 2017, 00:32:08) [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwinType &amp;quot;copyright&amp;quot;, &amp;quot;credits&amp;">
-<meta name="keywords" content="基础知识,">
+  <meta name="description" content="列表让你能够在一个地方存储成组的信息，其中可以只包含几个元素，也可以包含数百万个元素。列表是新手可直接使用的最强大的Python功能之一，它融合了众多重要的编程概念。 列表是什么列表 由一系列按特定顺序排列的元素组成。你可以创建包含字母表中所有字母、数字0~9或所有家庭成员姓名的列表；也可以将任何东西加入列表中，其中的元素之间可以没有任何关系。鉴于列表通常包含多个元素，给列表指定一个表示复数的名称">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python基础知识（一）">
-<meta property="og:url" content="http://yoursite.com/2017/10/14/python基础知识（一）/index.html">
+<meta property="og:title" content="pyhton（二）列表简介">
+<meta property="og:url" content="http://yoursite.com/2017/10/19/pyhton（二）列表简介/index.html">
 <meta property="og:site_name" content="张哲的网络日志">
-<meta property="og:description" content="安装python交互式解释器所谓交互式解释器，当我们启动python的时候会出现如下界面 1234Python 3.6.3 (v3.6.3:2c5fed86e0, Oct  3 2017, 00:32:08) [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwinType &amp;quot;copyright&amp;quot;, &amp;quot;credits&amp;">
+<meta property="og:description" content="列表让你能够在一个地方存储成组的信息，其中可以只包含几个元素，也可以包含数百万个元素。列表是新手可直接使用的最强大的Python功能之一，它融合了众多重要的编程概念。 列表是什么列表 由一系列按特定顺序排列的元素组成。你可以创建包含字母表中所有字母、数字0~9或所有家庭成员姓名的列表；也可以将任何东西加入列表中，其中的元素之间可以没有任何关系。鉴于列表通常包含多个元素，给列表指定一个表示复数的名称">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-10-18T10:48:06.000Z">
+<meta property="og:updated_time" content="2017-10-19T14:20:59.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python基础知识（一）">
-<meta name="twitter:description" content="安装python交互式解释器所谓交互式解释器，当我们启动python的时候会出现如下界面 1234Python 3.6.3 (v3.6.3:2c5fed86e0, Oct  3 2017, 00:32:08) [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwinType &amp;quot;copyright&amp;quot;, &amp;quot;credits&amp;">
+<meta name="twitter:title" content="pyhton（二）列表简介">
+<meta name="twitter:description" content="列表让你能够在一个地方存储成组的信息，其中可以只包含几个元素，也可以包含数百万个元素。列表是新手可直接使用的最强大的Python功能之一，它融合了众多重要的编程概念。 列表是什么列表 由一系列按特定顺序排列的元素组成。你可以创建包含字母表中所有字母、数字0~9或所有家庭成员姓名的列表；也可以将任何东西加入列表中，其中的元素之间可以没有任何关系。鉴于列表通常包含多个元素，给列表指定一个表示复数的名称">
   
     <link rel="alternative" href="/atom.xml" title="张哲的网络日志" type="application/atom+xml">
   
@@ -155,148 +154,144 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-python基础知识（一）" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-pyhton（二）列表简介" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      python基础知识（一）
+      pyhton（二）列表简介
     </h1>
   
 
         
-        <a href="/2017/10/14/python基础知识（一）/" class="archive-article-date">
-  	<time datetime="2017-10-14T10:18:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-14</time>
+        <a href="/2017/10/19/pyhton（二）列表简介/" class="archive-article-date">
+  	<time datetime="2017-10-19T13:20:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-19</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="安装python"><a href="#安装python" class="headerlink" title="安装python"></a>安装python</h2><h2 id="交互式解释器"><a href="#交互式解释器" class="headerlink" title="交互式解释器"></a>交互式解释器</h2><p>所谓交互式解释器，当我们启动python的时候会出现如下界面</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Python 3.6.3 (v3.6.3:2c5fed86e0, Oct  3 2017, 00:32:08) </div><div class="line">[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin</div><div class="line">Type &quot;copyright&quot;, &quot;credits&quot; or &quot;license()&quot; for more information.</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure>
-<p>这就是python的交互式解释器，&gt;&gt;&gt; 三个大于号就是python的命令提示符,试着输入print(“hello world”)，<br>然后按下回车键，python解释器会打印出 hello world 并在下一行又出现命令提示符。说明python已经解释并<br>执行了你刚刚输入的命令。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; </div><div class="line">print(&quot;hello world&quot;)</div><div class="line">hello world</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure>
-<p>如果写点乱七八糟的呢？</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; print(&quot;hello world&quot;)</div><div class="line">hello world</div><div class="line">&gt;&gt;&gt; sagdjaks;lg</div><div class="line">Traceback (most recent call last):</div><div class="line">  File &quot;&lt;pyshell#3&gt;&quot;, line 1, in &lt;module&gt;</div><div class="line">    sagdjaks;lg</div><div class="line">NameError: name &apos;sagdjaks&apos; is not defined</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure>
-<p>显然python没有明白你的意思报出了一个错误。这就是python的交互式解释器。   </p>
-<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><p>计算机程序设计就是告诉计算机做什么，计算机能做很多事，但是就不善于思考。需要程序员告诉他具体干什么。<br>告诉他细节，就像食谱一样;做一道菜需要什么材料，火候，顺序等等，对应计算机中的对象，属性等；</p>
-<h2 id="数字和表达式"><a href="#数字和表达式" class="headerlink" title="数字和表达式"></a>数字和表达式</h2><p>python 的解释器可以作为强大的计算器使用。试试下面的例子：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; 2+2</div><div class="line">4</div></pre></td></tr></table></figure>
-<p>解释器会很快给出答案4，再比如</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; 31643598+123487</div><div class="line">31767085</div></pre></td></tr></table></figure>
-<p>可以看出基本的运算完全不在话下，</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; 1/2</div><div class="line">0.5</div><div class="line">&gt;&gt;&gt; 1%3</div><div class="line">1</div><div class="line">&gt;&gt;&gt; 45%3</div><div class="line">0</div><div class="line">&gt;&gt;&gt; 76%</div><div class="line">SyntaxError: invalid syntax</div><div class="line">&gt;&gt;&gt; 76%8</div><div class="line">4</div></pre></td></tr></table></figure>
-<p>最后是幂运算</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; 2**3</div><div class="line">8</div><div class="line">&gt;&gt;&gt; 3**6</div><div class="line">729</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure>
-<h3 id="长整型数"><a href="#长整型数" class="headerlink" title="长整型数"></a>长整型数</h3><p>python 可以处理非常大的数。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; 10000000000000000000000000000000000000000000000000000000000000000000</div><div class="line">10000000000000000000000000000000000000000000000000000000000000000000</div></pre></td></tr></table></figure>
-<p>这么大的数都不在话下。</p>
-<p>在编程中，经常使用数字来记录游戏得分、表示可视化数据、存储Web应用信息等。Python根据数字的用法以不同的方式处理它们。鉴于整数使用起来最简单，下面就先来看看<br>Python是如何管理它们的。</p>
-<h3 id="整数"><a href="#整数" class="headerlink" title="整数"></a>整数</h3><p>在Python中，可对整数执行加（+ ）减（- ）乘（* ）除（/ ）运算。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; 2 + 3</div><div class="line">5 &gt;&gt;&gt; 3</div><div class="line">-</div><div class="line">2</div><div class="line">1 &gt;&gt;&gt; 2</div><div class="line">*</div><div class="line">3</div><div class="line">6 &gt;&gt;&gt; 3</div><div class="line">/</div><div class="line">2</div><div class="line">1.5</div></pre></td></tr></table></figure></p>
-<p>在终端会话中，Python直接返回运算结果。Python使用两个乘号表示乘方运算：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; 3 ** 2</div><div class="line">9 &gt;&gt;&gt; 3</div><div class="line">** 3</div><div class="line">27</div><div class="line">&gt;&gt;&gt; 10 ** 6</div><div class="line">1000000</div></pre></td></tr></table></figure></p>
-<p>Python还支持运算次序，因此你可在同一个表达式中使用多种运算。你还可以使用括号来修改运算次序，让Python按你指定的次序执行运算，如下所示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; 2 + 3*4</div><div class="line">14</div><div class="line">&gt;&gt;&gt; (2 + 3) * 4</div><div class="line">20</div></pre></td></tr></table></figure></p>
-<p>在这些示例中，空格不影响Python计算表达式的方式，它们的存在旨在让你阅读代码时，能迅速确定先执行哪些运算。</p>
-<p>###　浮点数<br>Python将带小数点的数字都称为浮点数 。大多数编程语言都使用了这个术语，它指出了这样一个事实：小数点可出现在数字的任何位置。每种编程语言都须细心设计，以妥善地<br>处理浮点数，确保不管小数点出现在什么位置，数字的行为都是正常的。<br>从很大程度上说，使用浮点数时都无需考虑其行为。你只需输入要使用的数字，Python通常都会按你期望的方式处理它们：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; 0.1 + 0.1</div><div class="line">0.2</div><div class="line">&gt;&gt;&gt; 0.2 + 0.2</div><div class="line">0.4</div><div class="line">&gt;&gt;&gt; 2 * 0.1</div><div class="line">0.2</div><div class="line">&gt;&gt;&gt; 2 * 0.2</div><div class="line">0.4</div></pre></td></tr></table></figure></p>
-<p>但需要注意的是，结果包含的小数位数可能是不确定的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; 0.2 + 0.1</div><div class="line">0.30000000000000004</div><div class="line">&gt;&gt;&gt; 3 * 0.1</div><div class="line">0.30000000000000004</div></pre></td></tr></table></figure></p>
-<p>所有语言都存在这种问题，没有什么可担心的。Python会尽力找到一种方式，以尽可能精确地表示结果，但鉴于计算机内部表示数字的方式，这在有些情况下很难。就现在而言，<br>暂时忽略多余的小数位数即可；</p>
-<p>###　使用函数str() 避免类型错误</p>
-<p>你经常需要在消息中使用变量的值。例如，假设你要祝人生日快乐，可能会编写类似于下面的代码：<br>birthday.py<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">age = 23</div><div class="line">message = &quot;Happy &quot; + age + &quot;rd Birthday!&quot;</div><div class="line">print(message)</div></pre></td></tr></table></figure></p>
-<p>你可能认为，上述代码会打印一条简单的生日祝福语：Happy 23rd birthday!。但如果你运行这些代码，将发现它们会引发错误：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Traceback (most recent call last):</div><div class="line">File &quot;birthday.py&quot;, line 2, in &lt;module&gt;</div><div class="line">message = &quot;Happy &quot; + age + &quot;rd Birthday!&quot;</div><div class="line">❶ TypeError: Can&apos;t convert &apos;int&apos; object to str implicitly</div></pre></td></tr></table></figure>
-<p>这是一个类型错误 ，意味着Python无法识别你使用的信息。在这个示例中，Python发现你使用了一个值为整数（int ）的变量，但它不知道该如何解读这个值（见❶）。Python知<br>道，这个变量表示的可能是数值23，也可能是字符2和3。像上面这样在字符串中使用整数时，需要显式地指出你希望Python将这个整数用作字符串。为此，可调用函数str() ，<br>它让Python将非字符串值表示为字符串：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">age = 23</div><div class="line">message = &quot;Happy &quot; + str(age) + &quot;rd Birthday!&quot;</div><div class="line">print(message)</div></pre></td></tr></table></figure></p>
-<p>这样，Python就知道你要将数值23转换为字符串，进而在生日祝福消息中显示字符2和3。经过上述处理后，将显示你期望的消息，而不会引发错误：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Happy 23rd Birthday!</div></pre></td></tr></table></figure></p>
-<p>大多数情况下，在Python中使用数字都非常简单。如果结果出乎意料，请检查Python是否按你期望的方式将数字解读为了数值或字符串。</p>
-<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p>下面来尝试使用一个变量。在这个文件开头添加一行代码，如下所示：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">message = &quot;Hello Python world!&quot;</div><div class="line">print(message)</div></pre></td></tr></table></figure>
-<p>运行这个程序，看看结果如何：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Hello Python world!</div></pre></td></tr></table></figure>
-<p>我们添加了一个名为message 的变量 。每个变量都存储了一个值 ——与变量相关联的信息。在这里，存储的值为文本“Hello Python world!”。<br>添加变量导致Python解释器需要做更多工作。处理第1行代码时，它将文本“Hello Python world!”与变量message 关联起来；而处理第2行代码时，它将与变量message 关联的值打<br>印到屏幕。<br>下面来进一步扩展这个程序：修改hello_world.py，使其再打印一条消息。为此，在hello_world.py中添加一个空行，再添加下面两行代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">message = &quot;Hello Python world!&quot;</div><div class="line">print(message)</div><div class="line"></div><div class="line">message = &quot;Hello Python Crash Course world!&quot;</div><div class="line">print(message)</div></pre></td></tr></table></figure>
-<p>现在如果运行这个程序，将看到两行输出：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Hello Python world!</div><div class="line">Hello Python Crash Course world!</div></pre></td></tr></table></figure>
-<p>在程序中可随时修改变量的值，而Python将始终记录变量的最新值。</p>
-<p>###变量的命名和使用</p>
-<p>在Python中使用变量时，需要遵守一些规则和指南。违反这些规则将引发错误，而指南旨在让你编写的代码更容易阅读和理解。请务必牢记下述有关变量的规则。</p>
-<ul>
-<li>变量名只能包含字母、数字和下划线。变量名可以字母或下划线打头，但不能以数字打头，例如，可将变量命名为message_1，但不能将其命名为1_message。</li>
-<li>变量名不能包含空格，但可使用下划线来分隔其中的单词。例如，变量名greeting_message可行，但变量名greeting message会引发错误。</li>
-<li>不要将Python关键字和函数名用作变量名，即不要使用Python保留用于特殊用途的单词，如print （请参见附录A.4）。</li>
-<li>变量名应既简短又具有描述性。例如，name比n好，student_name比s_n好，name_length比length_of_persons_name好。</li>
-<li>慎用小写字母l和大写字母O，因为它们可能被人错看成数字1和0。</li>
-<li>要创建良好的变量名，需要经过一定的实践，在程序复杂而有趣时尤其如此。随着你编写的程序越来越多，并开始阅读别人编写的代码，将越来越善于创建有意义的变量名。</li>
-<li>注意 　就目前而言，应使用小写的Python变量名。在变量名中使用大写字母虽然不会导致错误，但避免使用大写字母是个不错的主意。</li>
-</ul>
-<h3 id="使用变量时避免命名错误"><a href="#使用变量时避免命名错误" class="headerlink" title="使用变量时避免命名错误"></a>使用变量时避免命名错误</h3><p>程序员都会犯错，而且大多数程序员每天都会犯错。虽然优秀的程序员也会犯错，但他们也知道如何高效地消除错误。下面来看一种你可能会犯的错误，并学习如何消除它。<br>我们将有意地编写一些引发错误的代码。请输入下面的代码，包括其中以粗体显示但拼写不正确的单词mesage：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">message = <span class="string">"Hello Python Crash Course reader!"</span></div><div class="line">print(mesage)</div></pre></td></tr></table></figure>
-<p>程序存在错误时，Python解释器将竭尽所能地帮助你找出问题所在。程序无法成功地运行时，解释器会提供一个traceback。traceback是一条记录，指出了解释器尝试运行代码时，<br>在什么地方陷入了困境。下面是你不小心错误地拼写了变量名时，Python解释器提供的traceback：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Traceback (most recent call last):</div><div class="line">❶ File <span class="string">"hello_world.py"</span>, line <span class="number">2</span>, <span class="keyword">in</span> &lt;module&gt;</div><div class="line">❷ print(mesage)</div><div class="line">❸ NameError: name <span class="string">'mesage'</span> <span class="keyword">is</span> <span class="keyword">not</span> defined</div></pre></td></tr></table></figure>
-<p>解释器指出，文件hello_world.py的第2行存在错误（见❶）；它列出了这行代码，旨在帮助你快速找出错误（见❷）；它还指出了它发现的是什么样的错误（见❸）。在这里，解<br>释器发现了一个名称错误，并指出打印的变量mesage 未定义：Python无法识别你提供的变量名。名称错误通常意味着两种情况：要么是使用变量前忘记了给它赋值，要么是输入<br>变量名时拼写不正确。</p>
-<p>在这个示例中，第2行的变量名message 中遗漏了字母s。Python解释器不会对代码做拼写检查，但要求变量名的拼写一致。例如，如果在代码的另一个地方也将message错误地拼<br>写成了mesage，结果将如何呢？</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mesage = &quot;Hello Python Crash Course reader!&quot;</div><div class="line">print(mesage)</div></pre></td></tr></table></figure>
-<p>在这种情况下，程序将成功地运行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Hello Python Crash Course reader!</div></pre></td></tr></table></figure>
-<p>计算机一丝不苟，但不关心拼写是否正确。因此，创建变量名和编写代码时，你无需考虑英语中的拼写和语法规则。<br>很多编程错误都很简单，只是在程序的某一行输错了一个字符。为找出这种错误而花费很长时间的大有人在。很多程序员天资聪颖、经验丰富，却为找出这种细微的错误花费数<br>小时。你可能觉得这很好笑，但别忘了，在你的编程生涯中，经常会有同样的遭遇。</p>
-<h2 id="11-字符串"><a href="#11-字符串" class="headerlink" title="11 字符串"></a>11 字符串</h2><p>大多数程序都定义并收集某种数据，然后使用它们来做些有意义的事情。鉴于此，对数据进行分类大有裨益。我们将介绍的第一种数据类型是字符串。字符串虽然看似简单，但<br>能够以很多不同的方式使用它们。</p>
-<p><strong>字符串</strong> 就是一系列字符。在Python中，用引号括起的都是字符串，其中的引号可以是单引号，也可以是双引号，如下所示：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="string">"This is a string."</span></div><div class="line"><span class="string">'This is also a string.'</span></div></pre></td></tr></table></figure>
-<p>这种灵活性让你能够在字符串中包含引号和撇号：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&apos;I told my friend, &quot;Python is my favorite language!&quot;&apos;</div><div class="line">&quot;The language &apos;Python&apos; is named after Monty Python, not the snake.&quot;</div><div class="line">&quot;One of Python&apos;s strengths is its diverse and supportive community.&quot;</div></pre></td></tr></table></figure></p>
-<p>下面来看一些使用字符串的方式。</p>
-<h3 id="使用方法修改字符串的大小写"><a href="#使用方法修改字符串的大小写" class="headerlink" title="使用方法修改字符串的大小写"></a>使用方法修改字符串的大小写</h3><p>对于字符串，可执行的最简单的操作之一是修改其中的单词的大小写。请看下面的代码，并尝试判断其作用：</p>
-<p>name.py<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">name = &quot;ada lovelace&quot;</div><div class="line">print(name.title())</div></pre></td></tr></table></figure></p>
-<p>将这个文件保存为name.py，再运行它。你将看到如下输出：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Ada Lovelace</div></pre></td></tr></table></figure>
-<p>在这个示例中，小写的字符串”ada lovelace” 存储到了变量name 中。在print() 语句中，方法title() 出现在这个变量的后面。方法 是Python可对数据执行的操作。<br>在name.title() 中，name 后面的句点（. ）让Python对变量name 执行方法title() 指定的操作。每个方法后面都跟着一对括号，这是因为方法通常需要额外的信息来完成<br>其工作。这种信息是在括号内提供的。函数title() 不需要额外的信息，因此它后面的括号是空的。<br>title() 以首字母大写的方式显示每个单词，即将每个单词的首字母都改为大写。这很有用，因为你经常需要将名字视为信息。例如，你可能希望程序将值Ada 、ADA 和ada<br>视为同一个名字，并将它们都显示为Ada 。</p>
-<p>还有其他几个很有用的大小写处理方法。例如，要将字符串改为全部大写或全部小写，可以像下面这样做：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">name = &quot;Ada Lovelace&quot;</div><div class="line">print(name.upper())</div><div class="line">print(name.lower())</div></pre></td></tr></table></figure></p>
-<p>这些代码的输出如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ADA LOVELACE</div><div class="line">ada lovelace</div></pre></td></tr></table></figure></p>
-<p>存储数据时，方法lower() 很有用。很多时候，你无法依靠用户来提供正确的大小写，因此需要将字符串先转换为小写，再存储它们。以后需要显示这些信息时，再将其转换为<br>最合适的大小写方式。</p>
-<h3 id="合并（拼接）字符串"><a href="#合并（拼接）字符串" class="headerlink" title="合并（拼接）字符串"></a>合并（拼接）字符串</h3><p>在很多情况下，都需要合并字符串。例如，你可能想将姓和名存储在不同的变量中，等要显示姓名时再将它们合而为一：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">first_name = &quot;ada&quot;</div><div class="line">last_name = &quot;lovelace&quot;</div><div class="line">full_name = first_name + &quot; &quot; + last_name</div><div class="line">print(full_name)</div></pre></td></tr></table></figure>
-<p>Python使用加号（+ ）来合并字符串。在这个示例中，我们使用+ 来合并first_name 、空格和last_name ，以得到完整的姓名，其结果如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ada lovelace</div></pre></td></tr></table></figure>
-<p>这种合并字符串的方法称为拼接 。通过拼接，可使用存储在变量中的信息来创建完整的消息。下面来看一个例子：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">first_name = &quot;ada&quot;</div><div class="line">last_name = &quot;lovelace&quot;</div><div class="line">full_name = first_name + &quot; &quot; + last_name</div><div class="line">print(&quot;Hello, &quot; + full_name.title() + &quot;!&quot;)</div></pre></td></tr></table></figure>
-<p>在这里，一个问候用户的句子中使用了全名，并使用了方法title() 来将姓名设置为合适的格式。这些代码显示一条格式良好的简单问候语：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Hello, Ada Lovelace!</div></pre></td></tr></table></figure></p>
-<p>你可以使用拼接来创建消息，再把整条消息都存储在一个变量中：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">first_name = &quot;ada&quot;</div><div class="line">last_name = &quot;lovelace&quot;</div><div class="line">full_name = first_name + &quot; &quot; + last_name</div><div class="line">message = &quot;Hello, &quot; + full_name.title() + &quot;!&quot;</div><div class="line">print(message)</div></pre></td></tr></table></figure>
-<p>上述代码也显示消息“Hello, Ada Lovelace!”，但将这条消息存储在了一个变量中，这让最后的print 语句简单得多。</p>
-<h3 id="使用制表符或换行符来添加空白"><a href="#使用制表符或换行符来添加空白" class="headerlink" title="使用制表符或换行符来添加空白"></a>使用制表符或换行符来添加空白</h3><p>在编程中，空白 泛指任何非打印字符，如空格、制表符和换行符。你可使用空白来组织输出，以使其更易读。<br>要在字符串中添加制表符，可使用字符组合\t ，如下述代码的❶处所示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; print(&quot;Python&quot;)</div><div class="line">Python</div><div class="line">❶ &gt;&gt;&gt; print(&quot;\tPython&quot;)</div><div class="line">    Python</div></pre></td></tr></table></figure></p>
-<p>要在字符串中添加换行符，可使用字符组合\n ：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; print(&quot;Languages:\nPython\nC\nJavaScript&quot;)</div><div class="line">Languages:</div><div class="line">Python</div><div class="line">C </div><div class="line">JavaScript</div></pre></td></tr></table></figure></p>
-<p>还可在同一个字符串中同时包含制表符和换行符。字符串”\n\t” 让Python换到下一行，并在下一行开头添加一个制表符。下面的示例演示了如何使用一个单行字符串来生成四行<br>输出：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; print(&quot;Languages:\n\tPython\n\tC\n\tJavaScript&quot;)</div><div class="line">Languages:</div><div class="line">Python</div><div class="line">C</div><div class="line">JavaScript</div></pre></td></tr></table></figure>
-<h3 id="删除空白"><a href="#删除空白" class="headerlink" title="　删除空白"></a>　删除空白</h3><p>在程序中，额外的空白可能令人迷惑。对程序员来说，’python’ 和’python ‘ 看起来几乎没什么两样，但对程序来说，它们却是两个不同的字符串。Python能够发<br>现’python ‘ 中额外的空白，并认为它是有意义的——除非你告诉它不是这样的。</p>
-<p>空白很重要，因为你经常需要比较两个字符串是否相同。例如，一个重要的示例是，在用户登录网站时检查其用户名。但在一些简单得多的情形下，额外的空格也可能令人迷<br>惑。所幸在Python中，删除用户输入的数据中的多余的空白易如反掌。</p>
-<p>Python能够找出字符串开头和末尾多余的空白。要确保字符串末尾没有空白，可使用方法rstrip() 。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; favorite_language = &apos;python &apos;</div><div class="line">❷ &gt;&gt;&gt; favorite_language</div><div class="line">&apos;python &apos;</div><div class="line">❸ &gt;&gt;&gt; favorite_language.rstrip()</div><div class="line">&apos;python&apos;</div><div class="line">❹ &gt;&gt;&gt; favorite_language</div><div class="line">&apos;python &apos;</div></pre></td></tr></table></figure></p>
-<p>存储在变量favorite_language 中的字符串末尾包含多余的空白（见❶）。你在终端会话中向Python询问这个变量的值时，可看到末尾的空格（见❷）。对变<br>量favorite_language 调用方法rstrip() 后（见❸），这个多余的空格被删除了。然而，这种删除只是暂时的，接下来再次询问favorite_language 的值时，你会发<br>现这个字符串与输入时一样，依然包含多余的空白（见❹）。</p>
-<p>要永久删除这个字符串中的空白，必须将删除操作的结果存回到变量中：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; favorite_language = &apos;python &apos;</div><div class="line">❶ &gt;&gt;&gt; favorite_language = favorite_language.rstrip()</div><div class="line">&gt;&gt;&gt; favorite_language</div><div class="line">&apos;python&apos;</div></pre></td></tr></table></figure></p>
-<p>为删除这个字符串中的空白，你需要将其末尾的空白剔除，再将结果存回到原来的变量中（见❶）。在编程中，经常需要修改变量的值，再将新值存回到原来的变量中。这就是<br>变量的值可能随程序的运行或用户输入数据而发生变化的原因。</p>
-<p>你还可以剔除字符串开头的空白，或同时剔除字符串两端的空白。为此，可分别使用方法lstrip() 和strip() ：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">❹ &gt;&gt;&gt; favorite_language = &apos; python &apos;</div><div class="line">❷ &gt;&gt;&gt; favorite_language.rstrip()</div><div class="line">&apos; python&apos;</div><div class="line">❸ &gt;&gt;&gt; favorite_language.lstrip()</div><div class="line">&apos;python &apos;</div><div class="line">❹ &gt;&gt;&gt; favorite_language.strip()</div><div class="line">&apos;python&apos;</div></pre></td></tr></table></figure></p>
-<p>在这个示例中，我们首先创建了一个开头和末尾都有空白的字符串（见❶）。接下来，我们分别删除末尾（见❷）、开头（见❸）和两端（见❹）的空格。尝试使用这些剥除函<br>数有助于你熟悉字符串操作。在实际程序中，这些剥除函数最常用于在存储用户输入前对其进行清理。</p>
-<h3 id="使用字符串时避免语法错误"><a href="#使用字符串时避免语法错误" class="headerlink" title="使用字符串时避免语法错误"></a>使用字符串时避免语法错误</h3><p><strong>语法错误</strong><br> 是一种时不时会遇到的错误。程序中包含非法的Python代码时，就会导致语法错误。例如，在用单引号括起的字符串中，如果包含撇号，就将导致错误。这是因为这会<br>导致Python将第一个单引号和撇号之间的内容视为一个字符串，进而将余下的文本视为Python代码，从而引发错误。<br>下面演示了如何正确地使用单引号和双引号。请将该程序保存为apostrophe.py，再运行它：</p>
-<p>apostrophe.py<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">message = &quot;One of Python&apos;s strengths is its diverse community.&quot;</div><div class="line">print(message)</div></pre></td></tr></table></figure></p>
-<p>撇号位于两个双引号之间，因此Python解释器能够正确地理解这个字符串：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">One of Python&apos;s strengths is its diverse community.</div></pre></td></tr></table></figure>
-<p>然而，如果你使用单引号，Python将无法正确地确定字符串的结束位置：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">message = &apos;One of Python&apos;s strengths is its diverse community.&apos;</div><div class="line">print(message)</div></pre></td></tr></table></figure>
-<p>而你将看到如下输出：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">File &quot;apostrophe.py&quot;, line 1</div><div class="line">message = &apos;One of Python&apos;s strengths is its diverse community.&apos;</div><div class="line">^❶</div><div class="line">SyntaxError: invalid syntax</div></pre></td></tr></table></figure></p>
-<p>从上述输出可知，错误发生在第二个单引号后面（见❶）。这种语法错误 表明，在解释器看来，其中的有些内容不是有效的Python代码。错误的来源多种多样，这里指出一些常<br>见的。学习编写Python代码时，你可能会经常遇到语法错误。语法错误也是最不具体的错误类型，因此可能难以找出并修复。</p>
-<p>注意 　编写程序时，编辑器的语法突出功能可帮助你快速找出某些语法错误。看到Python代码以普通句子的颜色显示，或者普通句子以Python代码的颜色显示时，就可<br>能意味着文件中存在引号不匹配的情况。</p>
-<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p>在大多数编程语言中，注释都是一项很有用的功能。本书前面编写的程序中都只包含Python代码，但随着程序越来越大、越来越复杂，就应在其中添加说明，对你解决问题的方法<br>进行大致的阐述。注释 让你能够使用自然语言在程序中添加说明。</p>
-<h3 id="如何编写注释"><a href="#如何编写注释" class="headerlink" title="如何编写注释"></a>如何编写注释</h3><p>在Python中，注释用井号（# ）标识。井号后面的内容都会被Python解释器忽略，如下所示：<br>comment.py<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># 向大家问好</div><div class="line">print(&quot;Hello Python people!&quot;)</div></pre></td></tr></table></figure></p>
-<p>Python解释器将忽略第1行，只执行第2行。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Hello Python people!</div></pre></td></tr></table></figure></p>
-<h3 id="该编写什么样的注释"><a href="#该编写什么样的注释" class="headerlink" title="该编写什么样的注释"></a>该编写什么样的注释</h3><p>编写注释的主要目的是阐述代码要做什么，以及是如何做的。在开发项目期间，你对各个部分如何协同工作了如指掌，但过段时间后，有些细节你可能不记得了。当然，你总是<br>可以通过研究代码来确定各个部分的工作原理，但通过编写注释，以清晰的自然语言对解决方案进行概述，可节省很多时间。</p>
-<p>要成为专业程序员或与其他程序员合作，就必须编写有意义的注释。当前，大多数软件都是合作编写的，编写者可能是同一家公司的多名员工，也可能是众多致力于同一个开源<br>项目的人员。训练有素的程序员都希望代码中包含注释，因此你最好从现在开始就在程序中添加描述性注释。作为新手，最值得养成的习惯之一是，在代码中编写清晰、简洁的<br>注释。</p>
-<p>如果不确定是否要编写注释，就问问自己，找到合理的解决方案前，是否考虑了多个解决方案。如果答案是肯定的，就编写注释对你的解决方案进行说明吧。相比回过头去再添<br>加注释，删除多余的注释要容易得多。从现在开始，本书的示例都将使用注释来阐述代码的工作原理</p>
-<h3 id="新函数"><a href="#新函数" class="headerlink" title="新函数"></a>新函数</h3><p>lstrip()<br>rstrip()<br>strip()<br>upper()<br>lower()<br>title()<br>str()</p>
-<h2 id="python之禅"><a href="#python之禅" class="headerlink" title="python之禅"></a>python之禅</h2><p>编程语言Perl曾在互联网领域长期占据着统治地位，早期的大多数交互式网站使用的都是Perl脚本。彼时，“解决问题的办法有多个”被Perl社区奉为座右铭。这种理念一度深受大家<br>的喜爱，因为这种语言固有的灵活性使得大多数问题都有很多不同的解决之道。在开发项目期间，这种灵活性是可以接受的，但大家最终认识到，过于强调灵活性会导致大型项<br>目难以维护：要通过研究代码搞清楚当时解决复杂问题的人是怎么想的，既困难又麻烦，还会耗费大量的时间。<br>经验丰富的程序员倡导尽可能避繁就简。Python社区的理念都包含在Tim Peters撰写的“Python之禅”中。要获悉这些有关编写优秀Python代码的指导原则，只需在解释器中执行命<br>令import this 。这里不打算赘述整个“Python之禅”，而只与大家分享其中的几条原则，让你明白为何它们对Python新手来说至关重要。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line">&gt;&gt;&gt; import this</div><div class="line">The Zen of Python, by Tim Peters</div><div class="line">Beautiful is better than ugly.</div></pre></td></tr></table></figure></p>
-<p>Python程序员笃信代码可以编写得漂亮而优雅。编程是要解决问题的，设计良好、高效而漂亮的解决方案都会让程序员心生敬意。随着你对Python的认识越来越深入，并使用它来<br>编写越来越多的代码，有一天也许会有人站在你后面惊呼：“哇，代码编写得真是漂亮！”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Simple is better than complex.</div></pre></td></tr></table></figure></p>
-<p>如果有两个解决方案，一个简单，一个复杂，但都行之有效，就选择简单的解决方案吧。这样，你编写的代码将更容易维护，你或他人以后改进这些代码时也会更容易。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Complex is better than complicated.</div></pre></td></tr></table></figure></p>
-<p>现实是复杂的，有时候可能没有简单的解决方案。在这种情况下，就选择最简单可行的解决方案吧。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Readability counts.</div></pre></td></tr></table></figure></p>
-<p>即便是复杂的代码，也要让它易于理解。开发的项目涉及复杂代码时，一定要为这些代码编写有益的注释。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">There should be one-- and preferably only one --obvious way to do it.</div></pre></td></tr></table></figure></p>
-<p>如果让两名Python程序员去解决同一个问题，他们提供的解决方案应大致相同。这并不是说编程没有创意空间，而是恰恰相反！然而，大部分编程工作都是使用常见解决方案来解<br>决简单的小问题，但这些小问题都包含在更庞大、更有创意空间的项目中。在你的程序中，各种具体细节对其他Python程序员来说都应易于理解。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Now is better than never.</div></pre></td></tr></table></figure></p>
-<p>你可以将余生都用来学习Python和编程的纷繁难懂之处，但这样你什么项目都完不成。不要企图编写完美无缺的代码；先编写行之有效的代码，再决定是对其做进一步改进，还是<br>转而去编写新代码。<br>等你进入下一章，开始研究更复杂的主题时，务必牢记这种简约而清晰的理念。如此，经验丰富的程序员定将对你编写的代码心生敬意，进而乐意向你提供反馈，并与你合作开<br>发有趣的项目。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; import this</div><div class="line">The Zen of Python, by Tim Peters</div><div class="line"></div><div class="line">Beautiful is better than ugly.</div><div class="line">Explicit is better than implicit.</div><div class="line">Simple is better than complex.</div><div class="line">Complex is better than complicated.</div><div class="line">Flat is better than nested.</div><div class="line">Sparse is better than dense.</div><div class="line">Readability counts.</div><div class="line">Special cases aren&apos;t special enough to break the rules.</div><div class="line">Although practicality beats purity.</div><div class="line">Errors should never pass silently.</div><div class="line">Unless explicitly silenced.</div><div class="line">In the face of ambiguity, refuse the temptation to guess.</div><div class="line">There should be one-- and preferably only one --obvious way to do it.</div><div class="line">Although that way may not be obvious at first unless you&apos;re Dutch.</div><div class="line">Now is better than never.</div><div class="line">Although never is often better than *right* now.</div><div class="line">If the implementation is hard to explain, it&apos;s a bad idea.</div><div class="line">If the implementation is easy to explain, it may be a good idea.</div><div class="line">Namespaces are one honking great idea -- let&apos;s do more of those!</div></pre></td></tr></table></figure></p>
+        <p>列表让你能够在一个地方存储成组的信息，其中可以只包含几个元素，也可以包含数百万个元素。<br>列表是新手可直接使用的最强大的Python功能之一，它融合了众多重要的编程概念。</p>
+<h2 id="列表是什么"><a href="#列表是什么" class="headerlink" title="列表是什么"></a>列表是什么</h2><p><strong>列表</strong> 由一系列按特定顺序排列的元素组成。你可以创建包含字母表中所有字母、数字0~9或所有家庭成员姓名的列表；<br>也可以将任何东西加入列表中，其中的元素之间可以没有任何关系。鉴于列表通常包含多个元素，给列表指定一个表示复数的名称（如letters 、digits 或names ）是个不错的主意。<br>在Python中，用方括号（[] ）来表示列表，并用逗号来分隔其中的元素。下面是一个简单的列表示例，这个列表包含几种自行车：</p>
+<p>bicycles.py</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">bicycles = [&apos;trek&apos;, &apos;cannondale&apos;, &apos;redline&apos;, &apos;specialized&apos;]</div><div class="line">print(bicycles)</div></pre></td></tr></table></figure>
+<p>如果你让Python将列表打印出来，Python将打印列表的内部表示，包括方括号：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[&apos;trek&apos;, &apos;cannondale&apos;, &apos;redline&apos;, &apos;specialized&apos;]</div></pre></td></tr></table></figure>
+<p>鉴于这不是你要让用户看到的输出，下面来学习如何访问列表元素。</p>
+<h3 id="访问列表元素"><a href="#访问列表元素" class="headerlink" title="访问列表元素"></a>访问列表元素</h3><p>列表是有序集合，因此要访问列表的任何元素，只需将该元素的位置或索引告诉Python即可。要访问列表元素，可指出列表的名称，再指出元素的索引，并将其放在方括号内。<br>例如，下面的代码从列表bicycles 中提取第一款自行车：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">bicycles = [&apos;trek&apos;, &apos;cannondale&apos;, &apos;redline&apos;, &apos;specialized&apos;]</div><div class="line">❶ print(bicycles[0])</div></pre></td></tr></table></figure>
+<p>❶处演示了访问列表元素的语法。当你请求获取列表元素时，Python只返回该元素，而不包括方括号和引号：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">trek</div></pre></td></tr></table></figure>
+<p>这正是你要让用户看到的结果——整洁、干净的输出。</p>
+<p>你还可以对任何列表元素调用字符串方法。例如，可使用方法title() 让元素’trek’ 的格式更整洁：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">bicycles = [&apos;trek&apos;, &apos;cannondale&apos;, &apos;redline&apos;, &apos;specialized&apos;]</div><div class="line">print(bicycles[0].title())</div></pre></td></tr></table></figure>
+<p>这个示例的输出与前一个示例相同，只是首字母T是大写的。</p>
+<h3 id="索引从0而不是1开始"><a href="#索引从0而不是1开始" class="headerlink" title="索引从0而不是1开始"></a>索引从0而不是1开始</h3><p>在Python中，第一个列表元素的索引为0，而不是1。在大多数编程语言中都是如此，这与列表操作的底层实现相关。如果结果出乎意料，请看看你是否犯了简单的差一错误。<br>第二个列表元素的索引为1。根据这种简单的计数方式，要访问列表的任何元素，都可将其位置减1，并将结果作为索引。例如，要访问第四个列表元素，可使用索引3。<br>下面的代码访问索引1 和3 处的自行车：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">bicycles = [&apos;trek&apos;, &apos;cannondale&apos;, &apos;redline&apos;, &apos;specialized&apos;]</div><div class="line">print(bicycles[1])</div><div class="line">print(bicycles[3])</div></pre></td></tr></table></figure>
+<p>这些代码返回列表中的第二个和第四个元素：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cannondale</div><div class="line">specialized</div></pre></td></tr></table></figure>
+<p>Python为访问最后一个列表元素提供了一种特殊语法。通过将索引指定为-1 ，可让Python返回最后一个列表元素：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">bicycles = [&apos;trek&apos;, &apos;cannondale&apos;, &apos;redline&apos;, &apos;specialized&apos;]</div><div class="line">print(bicycles[-1])</div></pre></td></tr></table></figure>
+<p>这些代码返回’specialized’ 。这种语法很有用，因为你经常需要在不知道列表长度的情况下访问最后的元素。这种约定也适用于其他负数索引，例如，索引-2 返回倒数第<br>二个列表元素，索引-3 返回倒数第三个列表元素，以此类推。</p>
+<h3 id="使用列表中的各个值"><a href="#使用列表中的各个值" class="headerlink" title="使用列表中的各个值"></a>使用列表中的各个值</h3><p>可像使用其他变量一样使用列表中的各个值。例如，你可以使用拼接根据列表中的值来创建消息。<br>下面来尝试从列表中提取第一款自行车，并使用这个值来创建一条消息：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">bicycles = [&apos;trek&apos;, &apos;cannondale&apos;, &apos;redline&apos;, &apos;specialized&apos;]</div><div class="line">❶ message = &quot;My first bicycle was a &quot; + bicycles[0].title() + &quot;.&quot;</div><div class="line">print(message)</div></pre></td></tr></table></figure>
+<p>我们使用bicycles[0] 的值生成了一个句子，并将其存储在变量message 中（见❶）。输出是一个简单的句子，其中包含列表中的第一款自行车：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">My first bicycle was a Trek.</div></pre></td></tr></table></figure>
+<h2 id="修改、添加和删除元素"><a href="#修改、添加和删除元素" class="headerlink" title="修改、添加和删除元素"></a>修改、添加和删除元素</h2><p>你创建的大多数列表都将是动态的，这意味着列表创建后，将随着程序的运行增删元素。例如，你创建一个游戏，要求玩家射杀从天而降的外星人；为此，可在开始时将一些外<br>星人存储在列表中，然后每当有外星人被射杀时，都将其从列表中删除，而每次有新的外星人出现在屏幕上时，都将其添加到列表中。在整个游戏运行期间，外星人列表的长度<br>将不断变化。</p>
+<h3 id="修改列表元素"><a href="#修改列表元素" class="headerlink" title="修改列表元素"></a>修改列表元素</h3><p>修改列表元素的语法与访问列表元素的语法类似。要修改列表元素，可指定列表名和要修改的元素的索引，再指定该元素的新值。<br>例如，假设有一个摩托车列表，其中的第一个元素为’honda’ ，如何修改它的值呢？</p>
+<p>motorcycles.py<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">❶ motorcycles = [&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;]</div><div class="line">print(motorcycles)</div><div class="line">❷ motorcycles[0] = &apos;ducati&apos;</div><div class="line">print(motorcycles)</div></pre></td></tr></table></figure></p>
+<p>我们首先定义一个摩托车列表，其中的第一个元素为’honda’ （见❶）。接下来，我们将第一个元素的值改为’ducati’ （见❷）。输出表明，第一个元素的值确实变了，但<br>其他列表元素的值没变：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;]</div><div class="line">[&apos;ducati&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;]</div></pre></td></tr></table></figure>
+<p>你可以修改任何列表元素的值，而不仅仅是第一个元素的值。</p>
+<h3 id="在列表中添加元素"><a href="#在列表中添加元素" class="headerlink" title="在列表中添加元素"></a>在列表中添加元素</h3><p>你可能出于众多原因要在列表中添加新元素，例如，你可能希望游戏中出现新的外星人、添加可视化数据或给网站添加新注册的用户。Python提供了多种在既有列表中添加新数据<br>的方式。</p>
+<h4 id="在列表末尾添加元素"><a href="#在列表末尾添加元素" class="headerlink" title="在列表末尾添加元素"></a>在列表末尾添加元素</h4><p>在列表中添加新元素时，最简单的方式是将元素附加到列表末尾。给列表附加元素时，它将添加到列表末尾。继续使用前一个示例中的列表，在其末尾添加新元素’ducati’</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">motorcycles = [&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;]</div><div class="line">print(motorcycles)</div><div class="line">❶ motorcycles.append(&apos;ducati&apos;)</div><div class="line">print(motorcycles)</div></pre></td></tr></table></figure>
+<p>方法append() 将元素’ducati’ 添加到了列表末尾（见❶ ），而不影响列表中的其他所有元素：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;]</div><div class="line">[&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;, &apos;ducati&apos;]</div></pre></td></tr></table></figure>
+<p>方法append() 让动态地创建列表易如反掌，例如，你可以先创建一个空列表，再使用一系列的append() 语句添加元素。下面来创建一个空列表，再在其中添加元<br>素’honda’ 、’yamaha’ 和’suzuki’ ：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">motorcycles = []</div><div class="line">motorcycles.append(&apos;honda&apos;)</div><div class="line">motorcycles.append(&apos;yamaha&apos;)</div><div class="line">motorcycles.append(&apos;suzuki&apos;)</div><div class="line">print(motorcycles)</div></pre></td></tr></table></figure>
+<p>最终的列表与前述示例中的列表完全相同：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;]</div></pre></td></tr></table></figure>
+<p>这种创建列表的方式极其常见，因为经常要等程序运行后，你才知道用户要在程序中存储哪些数据。为控制用户，可首先创建一个空列表，用于存储用户将要输入的值，然后将<br>用户提供的每个新值附加到列表中。</p>
+<h4 id="在列表中插入元素"><a href="#在列表中插入元素" class="headerlink" title="在列表中插入元素"></a>在列表中插入元素</h4><p>使用方法insert() 可在列表的任何位置添加新元素。为此，你需要指定新元素的索引和值。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">motorcycles = [&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;]</div><div class="line">❶ motorcycles.insert(0, &apos;ducati&apos;)</div><div class="line">print(motorcycles)</div></pre></td></tr></table></figure>
+<p>在这个示例中，值’ducati’ 被插入到了列表开头（见❶）；方法insert() 在索引0 处添加空间，并将值’ducati’ 存储到这个地方。这种操作将列表中既有的每个元素都右<br>移一个位置：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[&apos;ducati&apos;, &apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;]</div></pre></td></tr></table></figure>
+<h4 id="从列表中删除元素"><a href="#从列表中删除元素" class="headerlink" title="从列表中删除元素"></a>从列表中删除元素</h4><p>你经常需要从列表中删除一个或多个元素。例如，玩家将空中的一个外星人射杀后，你很可能要将其从存活的外星人列表中删除；当用户在你创建的Web应用中注销其账户时，<br>你需要将该用户从活跃用户列表中删除。你可以根据位置或值来删除列表中的元素。</p>
+<h5 id="使用del-语句删除元素"><a href="#使用del-语句删除元素" class="headerlink" title="使用del 语句删除元素"></a>使用del 语句删除元素</h5><p>如果知道要删除的元素在列表中的位置，可使用del 语句。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">motorcycles = [&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;]</div><div class="line">print(motorcycles)</div><div class="line">❶ del motorcycles[0]</div><div class="line">print(motorcycles)</div></pre></td></tr></table></figure></p>
+<p>❶ 处的代码使用del 删除了列表motorcycles 中的第一个元素——‘honda’ ：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;]</div><div class="line">[&apos;yamaha&apos;, &apos;suzuki&apos;]</div></pre></td></tr></table></figure>
+<p>使用del 可删除任何位置处的列表元素，条件是知道其索引。下例演示了如何删除前述列表中的第二个元素——‘yamaha’ ：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">motorcycles = [&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;]</div><div class="line">print(motorcycles)</div><div class="line">del motorcycles[1]</div><div class="line">print(motorcycles)</div></pre></td></tr></table></figure>
+<p>下面的输出表明，已经将第二款摩托车从列表中删除了：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;]</div><div class="line">[&apos;honda&apos;, &apos;suzuki&apos;]</div></pre></td></tr></table></figure>
+<p>在这两个示例中，使用del 语句将值从列表中删除后，你就无法再访问它了。</p>
+<h4 id="使用方法pop-删除元素"><a href="#使用方法pop-删除元素" class="headerlink" title="使用方法pop() 删除元素"></a>使用方法pop() 删除元素</h4><p>有时候，你要将元素从列表中删除，并接着使用它的值。例如，你可能需要获取刚被射杀的外星人的 x 和 y 坐标，以便在相应的位置显示爆炸效果；在Web应用程序中，你可能<br>要将用户从活跃成员列表中删除，并将其加入到非活跃成员列表中。</p>
+<p>方法pop() 可删除列表末尾的元素，并让你能够接着使用它。术语弹出 （pop）源自这样的类比：列表就像一个栈，而删除列表末尾的元素相当于弹出栈顶元素。</p>
+<p>下面从列表motorcycles 中弹出一款摩托车：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">❶ motorcycles = [&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;]</div><div class="line">print(motorcycles)</div><div class="line">❷ popped_motorcycle = motorcycles.pop()</div><div class="line">❸ print(motorcycles)</div><div class="line">❹ print(popped_motorcycle)</div></pre></td></tr></table></figure>
+<p>我们首先定义并打印了列表motorcycles （见❶）。接下来，我们从这个列表中弹出一个值，并将其存储到变量popped_motorcycle 中（见❷）。然后我们打印这个列<br>表，以核实从其中删除了一个值（见❸）。最后，我们打印弹出的值，以证明我们依然能够访问被删除的值（见❹）。<br>输出表明，列表末尾的值’suzuki’ 已删除，它现在存储在变量popped_motorcycle 中：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;]</div><div class="line">[&apos;honda&apos;, &apos;yamaha&apos;]</div><div class="line">suzuki</div></pre></td></tr></table></figure>
+<p>方法pop() 是怎么起作用的呢？假设列表中的摩托车是按购买时间存储的，就可使用方法pop() 打印一条消息，指出最后购买的是哪款摩托车：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">motorcycles = [&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;]</div><div class="line">last_owned = motorcycles.pop()</div><div class="line">print(&quot;The last motorcycle I owned was a &quot; + last_owned.title() + &quot;.&quot;)</div></pre></td></tr></table></figure>
+<p>输出是一个简单的句子，指出了最新购买的是哪款摩托车：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">The last motorcycle I owned was a Suzuki.</div></pre></td></tr></table></figure>
+<h4 id="弹出列表中任何位置处的元素"><a href="#弹出列表中任何位置处的元素" class="headerlink" title="弹出列表中任何位置处的元素"></a>弹出列表中任何位置处的元素</h4><p>实际上，你可以使用pop() 来删除列表中任何位置的元素，只需在括号中指定要删除的元素的索引即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">motorcycles = [&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;]</div><div class="line">❶ first_owned = motorcycles.pop(0)</div><div class="line">❷ print(&apos;The first motorcycle I owned was a &apos; + first_owned.title() + &apos;.&apos;)</div></pre></td></tr></table></figure>
+<p>首先，我们弹出了列表中的第一款摩托车（见❶），然后打印了一条有关这辆摩托车的消息（见❷）。输出是一个简单的句子，描述了我购买的第一辆摩托车：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">The first motorcycle I owned was a Honda.</div></pre></td></tr></table></figure>
+<p>别忘了，每当你使用pop() 时，被弹出的元素就不再在列表中了。<br>如果你不确定该使用del 语句还是pop() 方法，下面是一个简单的判断标准：如果你要从列表中删除一个元素，且不再以任何方式使用它，就使用del 语句；如果你要在删除元<br>素后还能继续使用它，就使用方法pop() 。</p>
+<h4 id="根据值删除元素"><a href="#根据值删除元素" class="headerlink" title="根据值删除元素"></a>根据值删除元素</h4><p>有时候，你不知道要从列表中删除的值所处的位置。如果你只知道要删除的元素的值，可使用方法remove() 。<br>例如，假设我们要从列表motorcycles 中删除值’ducati’ 。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">motorcycles = [&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;, &apos;ducati&apos;]</div><div class="line">print(motorcycles)</div><div class="line">❶ motorcycles.remove(&apos;ducati&apos;)</div><div class="line">print(motorcycles)</div></pre></td></tr></table></figure>
+<p>❶ 处的代码让Python确定’ducati’ 出现在列表的什么地方，并将该元素删除：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;, &apos;ducati&apos;]</div><div class="line">[&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;]</div></pre></td></tr></table></figure>
+<p>使用remove() 从列表中删除元素时，也可接着使用它的值。下面删除值’ducati’ ，并打印一条消息，指出要将其从列表中删除的原因</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">❶ motorcycles = [&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;, &apos;ducati&apos;]</div><div class="line">print(motorcycles)</div><div class="line">❷ too_expensive = &apos;ducati&apos;</div><div class="line">❸ motorcycles.remove(too_expensive)</div><div class="line">print(motorcycles)</div><div class="line">❹ print(&quot;\nA &quot; + too_expensive.title() + &quot; is too expensive for me.&quot;)</div></pre></td></tr></table></figure>
+<p>在❶处定义列表后，我们将值’ducati’ 存储在变量too_expensive 中（见❷）。接下来，我们使用这个变量来告诉Python将哪个值从列表中删除（见❸）。最后，<br>值’ducati’ 已经从列表中删除，但它还存储在变量too_expensive 中（见❹），让我们能够打印一条消息，指出将’ducati’ 从列表motorcycles 中删除的原因：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;, &apos;ducati&apos;]</div><div class="line">[&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;]</div><div class="line">A Ducati is too expensive for me.</div></pre></td></tr></table></figure>
+<p><strong>注意</strong> 　方法remove() 只删除第一个指定的值。如果要删除的值可能在列表中出现多次，就需要使用循环来判断是否删除了所有这样的值。你将在第7章学习如何这<br>样做。</p>
+<h3 id="组织列表"><a href="#组织列表" class="headerlink" title="组织列表"></a>组织列表</h3><p>在你创建的列表中，元素的排列顺序常常是无法预测的，因为你并非总能控制用户提供数据的顺序。这虽然在大多数情况下都是不可避免的，但你经常需要以特定的顺序呈现信<br>息。有时候，你希望保留列表元素最初的排列顺序，而有时候又需要调整排列顺序。Python提供了很多组织列表的方式，可根据具体情况选用。</p>
+<h4 id="使用方法sort-对列表进行永久性排序"><a href="#使用方法sort-对列表进行永久性排序" class="headerlink" title="　使用方法sort() 对列表进行永久性排序"></a>　使用方法sort() 对列表进行永久性排序</h4><p>Python方法sort() 让你能够较为轻松地对列表进行排序。假设你有一个汽车列表，并要让其中的汽车按字母顺序排列。为简化这项任务，我们假设该列表中的所有值都是小写<br>的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cars = [&apos;bmw&apos;, &apos;audi&apos;, &apos;toyota&apos;, &apos;subaru&apos;]</div><div class="line">❶ cars.sort()</div><div class="line">print(cars)</div></pre></td></tr></table></figure>
+<p>方法sort() （见❶）永久性地修改了列表元素的排列顺序。现在，汽车是按字母顺序排列的，再也无法恢复到原来的排列顺序：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[&apos;audi&apos;, &apos;bmw&apos;, &apos;subaru&apos;, &apos;toyota&apos;]</div></pre></td></tr></table></figure>
+<p>你还可以按与字母顺序相反的顺序排列列表元素，为此，只需向sort() 方法传递参数reverse=True 。下面的示例将汽车列表按与字母顺序相反的顺序排列：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cars = [&apos;bmw&apos;, &apos;audi&apos;, &apos;toyota&apos;, &apos;subaru&apos;]</div><div class="line">cars.sort(reverse=True)</div><div class="line">print(cars)</div></pre></td></tr></table></figure>
+<p>同样，对列表元素排列顺序的修改是永久性的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[&apos;toyota&apos;, &apos;subaru&apos;, &apos;bmw&apos;, &apos;audi&apos;]</div></pre></td></tr></table></figure>
+<h4 id="使用函数sorted-对列表进行临时排序"><a href="#使用函数sorted-对列表进行临时排序" class="headerlink" title="使用函数sorted() 对列表进行临时排序"></a>使用函数sorted() 对列表进行临时排序</h4><p>要保留列表元素原来的排列顺序，同时以特定的顺序呈现它们，可使用函数sorted() 。函数sorted() 让你能够按特定顺序显示列表元素，同时不影响它们在列表中的原始排<br>列顺序。</p>
+<p>下面尝试对汽车列表调用这个函数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">cars = [&apos;bmw&apos;, &apos;audi&apos;, &apos;toyota&apos;, &apos;subaru&apos;]</div><div class="line">❶ print(&quot;Here is the original list:&quot;)</div><div class="line">print(cars)</div><div class="line">❷ print(&quot;\nHere is the sorted list:&quot;)</div><div class="line">print(sorted(cars))</div><div class="line">❸ print(&quot;\nHere is the original list again:&quot;)</div><div class="line">print(cars)</div></pre></td></tr></table></figure>
+<p>我们首先按原始顺序打印列表（见❶），再按字母顺序显示该列表（见❷）。以特定顺序显示列表后，我们进行核实，确认列表元素的排列顺序与以前相同（见❸）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Here is the original list:</div><div class="line">[&apos;bmw&apos;, &apos;audi&apos;, &apos;toyota&apos;, &apos;subaru&apos;]</div><div class="line">Here is the sorted list:</div><div class="line">[&apos;audi&apos;, &apos;bmw&apos;, &apos;subaru&apos;, &apos;toyota&apos;]</div><div class="line">❹ Here is the original list again:</div><div class="line">[&apos;bmw&apos;, &apos;audi&apos;, &apos;toyota&apos;, &apos;subaru&apos;]</div></pre></td></tr></table></figure>
+<p>注意，调用函数sorted() 后，列表元素的排列顺序并没有变（见❹）。如果你要按与字母顺序相反的顺序显示列表，也可向函数sorted() 传递参数reverse=True 。</p>
+<p>注意 　在并非所有的值都是小写时，按字母顺序排列列表要复杂些。决定排列顺序时，有多种解读大写字母的方式，要指定准确的排列顺序，可能比我们这里所做的<br>要复杂。然而，大多数排序方式都基于本节介绍的知识。</p>
+<p>####　倒着打印列表<br>要反转列表元素的排列顺序，可使用方法reverse() 。假设汽车列表是按购买时间排列的，可轻松地按相反的顺序排列其中的汽车：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cars = [&apos;bmw&apos;, &apos;audi&apos;, &apos;toyota&apos;, &apos;subaru&apos;]</div><div class="line">print(cars)</div><div class="line">cars.reverse()</div><div class="line">print(cars)</div></pre></td></tr></table></figure>
+<p>注意，reverse() 不是指按与字母顺序相反的顺序排列列表元素，而只是反转列表元素的排列顺序：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[&apos;bmw&apos;, &apos;audi&apos;, &apos;toyota&apos;, &apos;subaru&apos;]</div><div class="line">[&apos;subaru&apos;, &apos;toyota&apos;, &apos;audi&apos;, &apos;bmw&apos;]</div></pre></td></tr></table></figure>
+<p>方法reverse() 永久性地修改列表元素的排列顺序，但可随时恢复到原来的排列顺序，为此只需对列表再次调用reverse() 即可。</p>
+<h4 id="确定列表的长度"><a href="#确定列表的长度" class="headerlink" title="　确定列表的长度"></a>　确定列表的长度</h4><p>使用函数len() 可快速获悉列表的长度。在下面的示例中，列表包含4个元素，因此其长度为4：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; cars = [&apos;bmw&apos;, &apos;audi&apos;, &apos;toyota&apos;, &apos;subaru&apos;]</div><div class="line">&gt;&gt;&gt; len(cars)</div><div class="line">4</div></pre></td></tr></table></figure>
+<p>在你需要完成如下任务时，len() 很有用：确定还有多少个外星人未被射杀，需要管理多少项可视化数据，网站有多少注册用户等。<br>注意 　Python计算列表元素数时从1开始，因此确定列表长度时，你应该不会遇到差一错误。</p>
+<h3 id="使用列表时避免索引错误"><a href="#使用列表时避免索引错误" class="headerlink" title="使用列表时避免索引错误"></a>使用列表时避免索引错误</h3><p>刚开始使用列表时，经常会遇到一种错误。假设你有一个包含三个元素的列表，却要求获取第四个元素：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">motorcycles = [&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;]</div><div class="line">print(motorcycles[3])</div></pre></td></tr></table></figure>
+<p>这将导致索引错误 ：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Traceback (most recent call last):</div><div class="line">File &quot;motorcycles.py&quot;, line 3, in &lt;module&gt;</div><div class="line">print(motorcycles[3])</div><div class="line">IndexError: list index out of range</div></pre></td></tr></table></figure>
+<p>Python试图向你提供位于索引3处的元素，但它搜索列表motorcycles 时，却发现索引3处没有元素。鉴于列表索引差一的特征，这种错误很常见。有些人从1开始数，因此以为<br>第三个元素的索引为3；但在Python中，第三个元素的索引为2，因为索引是从0开始的。</p>
+<p>索引错误意味着Python无法理解你指定的索引。程序发生索引错误时，请尝试将你指定的索引减1，然后再次运行程序，看看结果是否正确。</p>
+<p>别忘了，每当需要访问最后一个列表元素时，都可使用索引-1 。这在任何情况下都行之有效，即便你最后一次访问列表后，其长度发生了变化：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">motorcycles = [&apos;honda&apos;, &apos;yamaha&apos;, &apos;suzuki&apos;]</div><div class="line">print(motorcycles[-1])</div></pre></td></tr></table></figure>
+<p>索引-1 总是返回最后一个列表元素，这里为值’suzuki’ ：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&apos;suzuki&apos;</div></pre></td></tr></table></figure>
+<p>仅当列表为空时，这种访问最后一个元素的方式才会导致错误：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">motorcycles = []</div><div class="line">print(motorcycles[-1])</div></pre></td></tr></table></figure>
+<p>列表motorcycles 不包含任何元素，因此Python返回一条索引错误消息：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Traceback (most recent call last):</div><div class="line">File &quot;motorcyles.py&quot;, line 3, in &lt;module&gt;</div><div class="line">print(motorcycles[-1])</div><div class="line">IndexError: list index out of range</div></pre></td></tr></table></figure>
+<p>注意 　发生索引错误却找不到解决办法时，请尝试将列表或其长度打印出来。列表可能与你以为的截然不同，在程序对其进行了动态处理时尤其如此。通过查看列表或其包含的元素数，可帮助你找出这种逻辑错误。</p>
 
       
 
@@ -326,17 +321,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">基础知识,</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -387,7 +371,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/10/14/python基础知识（一）/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/10/19/pyhton（二）列表简介/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -401,15 +385,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/10/19/pyhton（二）列表简介/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          pyhton（二）列表简介
-        
-      </div>
-    </a>
   
+    <a href="/2017/10/14/python基础知识（一）/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">python基础知识（一）</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
